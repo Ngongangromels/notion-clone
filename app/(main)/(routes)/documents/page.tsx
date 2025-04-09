@@ -33,7 +33,7 @@ const onCreate = () => {
             height="300" 
             />
             <h2 className=" text-lg font-medium ">
-                Welcome to {user?.firstName || "Romels"} Jotion
+                Welcome to {user?.username || "Romels"} Jotion
             </h2>
             <Button onClick={onCreate}>
                 <PlusCircle className="h-4 w-4 mr-2" />

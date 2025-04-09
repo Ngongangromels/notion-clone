@@ -27,7 +27,7 @@ const { user } = useUser()
                 <AvatarImage src={user?.imageUrl} />
               </Avatar>
               <span className="text-start font-mediun line-clamp-1">
-                {user?.firstName || "Nkouakam romels"}&apos; Jotion
+                {user?.username || "Nkouakam romels"}&apos; Jotion
               </span>
             </div>
             <ChevronsLeftRight className="rotate-90 ml-2 text-muted-foreground h-4 w-4 " />
@@ -51,7 +51,7 @@ const { user } = useUser()
                </div>
                <div className="space-y-1">
                 <p className="text-sm line-clamp-1">
-                    {user?.firstName || "Nkouakam romels"}&apos; Jotion
+                    {user?.username || "Nkouakam romels"}&apos; Jotion
                 </p>
                </div>
             </div>
