@@ -13,7 +13,7 @@ interface EditorProps {
   editable?: boolean;
 }
 
-const Editor = ({ onChange, initialContent, editable }: EditorProps) => {
+const Editor = ({ onChange, initialContent}: EditorProps) => {
   const { resolvedTheme } = useTheme();
   const { edgestore } = useEdgeStore()
 
@@ -26,7 +26,6 @@ const Editor = ({ onChange, initialContent, editable }: EditorProps) => {
   }
 
   const editor: BlockNoteEditor = useCreateBlockNote({
-    editable: editable,
     initialContent: initialContent
       ? (JSON.parse(initialContent) as PartialBlock[])
       : undefined,
