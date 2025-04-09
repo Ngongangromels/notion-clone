@@ -25,22 +25,17 @@ const onCreate = () => {
 }
 
   return (
-        <div className="h-full flex flex-col items-center justify-center space-Y-4">
-           <Image
-            src="/Empty.png"
-            alt="Empty"
-            width="300"
-            height="300" 
-            />
-            <h2 className=" text-lg font-medium ">
-                Welcome to {user?.username || "Romels"} Jotion
-            </h2>
-            <Button onClick={onCreate}>
-                <PlusCircle className="h-4 w-4 mr-2" />
-                Create a note
-            </Button>
-      </div>
-      )
+    <div className="h-full flex flex-col items-center justify-center space-Y-4">
+      <Image src="/Empty.png" alt="Empty" width="300" height="300" />
+      <h2 className=" text-lg font-medium ">
+        Welcome to Jotion {user?.username || "Romels"}
+      </h2>
+      <Button onClick={onCreate}>
+        <PlusCircle className="h-4 w-4 mr-2" />
+        Create a note
+      </Button>
+    </div>
+  );
 };
 
 export default DocumentsPage;
